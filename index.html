@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrInG2的个人博客</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            font-family: "Microsoft YaHei", sans-serif;
+            background-color: #f5f5f5;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+        .post {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .post h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .image-box {
+            margin: 25px 0;
+            text-align: center;
+        }
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .image-box p {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>欢迎来到FrInG2的个人博客</h1>
+        <p>这是我用Github Pages发布的第一个博客</p>
+    </div>
+
+    <div class="post">
+        <h2>实验要求：两种图片引用方式对比</h2>
+
+        <!-- 1. 绝对路径引用（Unsplash无防盗链图片，绝对能用） -->
+        <div class="image-box">
+            <h3>✅ 绝对路径图片（网络图片）</h3>
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop" alt="风景图">
+            <p>引用地址：https://images.unsplash.com/photo-1506905925346-21bda4d32df4</p>
+        </div>
+
+        <!-- 2. 相对路径引用（先放一张占位图，确保页面能打开） -->
+        <div class="image-box">
+            <h3>✅ 相对路径图片（本地图片占位）</h3>
+            <img src="https://picsum.photos/800/400" alt="占位图">
+            <p>说明：等页面正常后，再上传你自己的图片到images文件夹</p>
+        </div>
+    </div>
+</body>
+</html>
